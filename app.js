@@ -7,6 +7,8 @@ const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 
+const PORT = process.env.PORT || 8080;
+
 async function main(){
     await mongoose.connect(mongoURL);
 }
@@ -95,6 +97,6 @@ app.get("/",(req,res)=>{
     res.send("Hi I am root");
 })
 
-app.listen(8080,()=>{
+app.listen(PORT,()=>{
     console.log("server listing");
 })
