@@ -1,6 +1,6 @@
-# Wonderlust
+# Todo List
 
-Wonderlust is a beginner-friendly Airbnb-style listing project. It lets you create, view, edit, and delete property listings.
+Todo List is a beginner-friendly Airbnb-style listing project. It lets you create, view, edit, and delete property listings.
 
 ## Built with
 
@@ -21,16 +21,12 @@ Before running the project, make sure these are installed:
 MongoDB must be running locally because the project connects to:
 
 ```text
-mongodb://127.0.0.1:27017/wonderlust
+mongodb://127.0.0.1:27017/todo-list
 ```
 
 ## Run the project
 
 Open PowerShell, then move into the project folder:
-
-```powershell
-cd "C:\Users\User\Desktop\Woderlust AirBNB\Wonderlust-project"
-```
 
 Install dependencies if `node_modules` is not already present:
 
@@ -68,7 +64,7 @@ Run this command **only when you want to reset the database with sample data**:
 node init/index.js
 ```
 
-> Warning: this command deletes every existing listing in the `wonderlust` database before adding the sample listings.
+> Warning: this command deletes every existing listing in the `Todo List` database before adding the sample listings.
 
 ## Routes
 
@@ -86,7 +82,7 @@ node init/index.js
 ## Project structure
 
 ```text
-Wonderlust-project/
+Todo List-project/
 ├── app.js              # Express server and application routes
 ├── models/
 │   └── listing.js       # MongoDB listing schema

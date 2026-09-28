@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const Listing = require("./models/listing");
-const mongoURL = "mongodb://127.0.0.1:27017/wonderlust";
+const mongoURL = "mongodb://127.0.0.1:27017/todo-list";
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
@@ -94,9 +94,9 @@ main().then(()=>{
 
 
 app.get("/",(req,res)=>{
-    res.send("Hi I am root");
+    res.send("Hi, SK! Welcome to the TODO APP");
 })
 
 app.listen(PORT,()=>{
-    console.log("server listing");
+    console.log("server listening");
 })

@@ -1,20 +1,25 @@
 <% layout ('/layouts/boilerplate') -%>
 <body>
-    <h3>Create new listing</h3>
-    <form method="POST" action="/listings">
-        <input type="text" name="listing[title]" placeholder="Enter title">
-        <br><br>
-        <textarea name="listing[description]" id="" placeholder="Enter description"></textarea>
-        <br><br>
-        <input type="text" name="listing[image]" placeholder="Enter Image url">
-        <br><br>
-        <input type="number" name="listing[price]" placeholder="Enter number">
-        <br><br>       
-        <input type="text" name="listing[location]" placeholder="Enter location">
-        <br><br>
-        <input type="text" name="listing[country]" placeholder="Enter country">
-        <br><br>
-        <button>Add</button>
-        <br>
-    </form>
+  <h3>Create new listing</h3>
+  <form method="POST" action="/listings">
+    <input
+      type="text"
+      name="listing[title]"
+      placeholder="Enter your todo"
+      required
+    />
+    <br /><br />
+    <button
+      style="
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      "
+    >
+      Add
+    </button>
+    <br />
+  </form>
 </body>
