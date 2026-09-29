@@ -94,7 +94,7 @@ main().then(()=>{
 
 
 app.get("/",(req,res)=>{
-    res.send("Hi, SK! Welcome to the TODO APP");
+    res.render("home.ejs");
 })
 
 app.listen(PORT,()=>{
